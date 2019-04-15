@@ -1,3 +1,19 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.dark-main-color {
+  color:#044e3e;
+}
+
+.dark-main-bg-color {
+  background:#044e3e;
+}
+
+.main-bg-color {
+  background: #30e8bd;
+}
+
 a.anchor {
   text-decoration: none;
 }

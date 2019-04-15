@@ -24,36 +24,10 @@
       padding: 25px;
     }
   </style>
-  <script>
-  $(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-
-        // Store hash
-        var hash = this.hash;
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top-50
-        }, 500, function(){
-
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
-    });
-  });
-  </script>
 </head>
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-fixed-top dark-main-bg-color">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -61,62 +35,79 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Hunter</a>
+      <a class="navbar-brand" href="#" style="color:white;">Hunter</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" style="color:white;">Home</a></li>
+        <li><a href="#about" style="color:white;">About</a></li>
+        <li><a href="#projects"style="color:white;">Projects</a></li>
+        <li><a href="#contact"style="color:white;">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="jumbotron" id="home">
+<div class="jumbotron main-bg-color" id="home">
   <br><br>
   <div class="container text-center">
-    <h1>Hunter Gallant</h1>
-    <p class="text-primary">Computer Science '21, Dartmouth College</p>
+    <h1 style="color:white;">Hunter Gallant</h1>
+    <p class="dark-main-color">Computer Science '21, Dartmouth College</p>
   </div>
+  <div id="about"></div>
 </div>
 
-<div class="container-fluid bg-3" id="about">
-  <h3 class="text-center">About</h3><br>
+<div class="container-fluid bg-3 dark-main-color">
+  <h3 class="text-center">About Me</h3><br>
   <div class="row">
     <div class="col-sm-4 text-center">
       <img src="it_me_beep_borp.jpg" class="img-rounded" style="width:50%">
     </div>
     <div class="col-sm-8">
-      <p>It me, BeepBorp</p>
+      <p>For years, I've been fascinated by computers, and in particular, artificial intelligence. What it
+      be like to have a conversation with a true artificial intelligence? When techology reaches that point,
+      where we define it as being "alive", there will be an incredible change in the state of the human condition.
+      This new form of life, created by humanity, will be fundamentally different than any form of biological life
+      that currently exists. </p>
+      <p>I, for one, am very excited for this day to arrive. I want to do everything I can to contribute to this
+      future, to the creation of a true artifical intelligence. Most likely, we will not see this within the 21st
+      century. Until then, we can take small steps, with each victory bringing us closer to the creation of new life.
+      </p>
+      <p>This is my vision for the future. I am fascinated by how technology can be applied to activities we consider
+      distinctly human - poetry, art, music, and more. My projects reflect my ambitions, and although they are nowhere
+      near perfect, I am constantly improving them.</p>
     </div>
-  </div><br><br>
+  </div>
+  <div id="projects"></div>
+  <br><br>
 </div>
 
-<div class="container-fluid bg-3 text-center" style="background-color: #f2f2f2;" id="projects">
+<div class="container-fluid bg-3 text-center main-bg-color dark-main-color">
   <h3>Projects</h3><br>
   <div class="row">
     <div class="col-sm-3">
+      <a href="https://github.com/theairdemon/themedPoemGenerator" target="_blank">
       <p>PoemGEN 2.0</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-rounded" style="width:100%" alt="Image">
+      <img src="penwithquill.svg" class="img-rounded" style="width:60%; background:white; padding:10px;" alt="Image">
+      </a>
     </div>
     <div class="col-sm-3">
       <p>MusicGEN</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-rounded" style="width:100%" alt="Image">
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-rounded" style="width:60%" alt="Image">
     </div>
     <div class="col-sm-3">
       <p>Unity Game</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-rounded" style="width:100%" alt="Image">
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-rounded" style="width:60%" alt="Image">
     </div>
     <div class="col-sm-3">
       <p>AI Class Repo</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-rounded" style="width:100%" alt="Image">
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-rounded" style="width:60%" alt="Image">
     </div>
   </div><br><br>
+  <div id="contact"></div>
 </div><br><br>
 
-<div class="container-fluid bg-3" id="contact">
+<div class="container-fluid bg-3 dark-main-color" >
   <h3 class="text-center">Contact</h3><br>
   <div class="row">
     <div class="col-sm-4 text-center">
@@ -133,7 +124,7 @@
 
 
 
-<footer class="container-fluid text-center">
+<footer class="container-fluid text-center main-bg-color">
   <p>Footer Text</p>
 </footer>
 
