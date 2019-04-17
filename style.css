@@ -2,6 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
+.col-sm-3, .col-sm-4 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .dark-main-color {
   color:#044e3e;
 }
